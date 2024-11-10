@@ -1,0 +1,86 @@
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+section {
+  background-color: #f3d4d9;
+  padding-bottom: 3rem;
+  
+}
+
+header {
+  position: relative;
+  padding: 10px;
+  
+}
+
+.header-divider{
+  background-color: #f0a1ae;
+  height: 2px;
+  border-bottom: #c4929a solid;
+}
+
+.logo-text-wrapper {
+  position: absolute;
+  top: -5px;
+  left: 50px;
+}
+
+.jolly-lodger-font {
+  font-family: "Jolly Lodger", system-ui;
+  font-weight:500;
+  font-size: 1.75rem;
+}
+
+.ubuntu-font {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+}
+
+.noto-serif-font {
+  font-family: "Noto Serif", serif;
+}
+
+.hero {
+  padding-left: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.hero-left > h1 {
+  font-size: 4rem;
+  font-weight: 400;
+  margin: 3rem 0 0;
+}
+
+.hero-left :nth-child(2) {
+  font-size: 5rem;
+  font-weight: 900;
+  margin: -2rem 0 0;
+  background-image: url(/images/flowers.jpg);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-left > p {
+  color: #773a44;
+}
+
+.hero-left > div {
+  background-image: linear-gradient(to right, #f1bcc5 , #e5e6e7, rgb(241, 158, 172), rgb(243, 119, 140));
+  display: inline-block;
+  padding: 0 2rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
+
+.hero-right {
+  height: 400px;
+  background-image: url(/images/two-japanese-girls.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: 1rem;
+  border-radius: 200px 0 0 200px;
+}
