@@ -1,11 +1,13 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  color: rgb(80, 80, 80);
 }
 
 section {
   background-color: #f3d4d9;
   padding-bottom: 3rem;
+  margin-bottom: 2rem;
   
 }
 
@@ -83,4 +85,37 @@ header {
   background-size: cover;
   margin-top: 1rem;
   border-radius: 200px 0 0 200px;
+}
+
+.categories-section {
+  padding: 2rem 5rem;
+}
+
+.categories-section > h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: -0.5rem 0;
+}
+
+.categories-section .images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* gap: 1rem; */
+}
+
+.categories-section .images .image-wrapper{
+  height: 270px;
+  width: 140px;
+}
+
+.categories-section .image-wrapper img {
+  height: 200px;
+  width: 140px;
+  object-fit: cover;
+  border-radius: 70px;
+}
+
+.categories-section .image-wrapper p {
+  text-align: center;
 }
