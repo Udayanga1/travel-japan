@@ -16,6 +16,12 @@ section {
   
 }
 
+section h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: -0.25rem 0;
+}
+
 header {
   position: relative;
   padding: 10px;
@@ -98,17 +104,23 @@ header {
   padding: 2rem 5rem;
 }
 
-.categories-section > h2 {
+/* .categories-section > h2 {
   font-size: 3.5rem;
   font-weight: 400;
   margin: -0.5rem 0;
-}
+} */
 
 .categories-section .images {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   /* gap: 1rem; */
+}
+
+
+.image-section h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .categories-section .images .image-wrapper{
@@ -182,7 +194,6 @@ header {
   background-color: var(--orange-color);
   width: 50px;
   height: 50px;
-  /* position: absolute; */
   top: 15px;
   left: 25px;
 }
@@ -309,10 +320,29 @@ header {
   color: #b22e76;
 }
 
-.text-section > h2 {
-  font-size: 3.5rem;
-  font-weight: 400;
-  margin: -0.25rem 0;
+
+
+.point-of-details {
+  padding: 1rem 5rem 3rem;
 }
 
+.point-of-details .top-bar {
+  width: 100px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--orange-color);
+}
+
+.point-of-details table,tr,th,td {
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: rgba(223, 122, 149, 0.509);
+}
+
+.point-of-details table th,td {
+  width: 33%;
+  color: rgba(164, 83, 105, 0.795);
+  font-weight: 500;
+  padding: 5px 10px;
+}
 
