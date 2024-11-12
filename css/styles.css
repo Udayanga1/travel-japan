@@ -1,7 +1,12 @@
+:root {
+  --orange-color: #e9c996;
+  --text-color: rgb(122, 122, 122);
+}
+
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  color: rgb(80, 80, 80);
+  color: var(--text-color);
 }
 
 section {
@@ -48,7 +53,7 @@ header {
   padding-left: 4rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 30px;
+  gap: 50px;
 }
 
 .hero-left > h1 {
@@ -67,15 +72,17 @@ header {
 }
 
 .hero-left > p {
-  color: #773a44;
+  font-size: 0.8rem;
 }
 
 .hero-left > div {
   background-image: linear-gradient(to right, #f1bcc5 , #e5e6e7, rgb(241, 158, 172), rgb(243, 119, 140));
   display: inline-block;
   padding: 0 2rem;
+  margin-top: 1.5em;
   height: 4rem;
   border-radius: 2rem;
+  color: rgb(240, 100, 124);
 }
 
 .hero-right {
@@ -107,6 +114,7 @@ header {
 .categories-section .images .image-wrapper{
   height: 270px;
   width: 140px;
+  font-weight: 600;
 }
 
 .categories-section .image-wrapper img {
@@ -119,3 +127,192 @@ header {
 .categories-section .image-wrapper p {
   text-align: center;
 }
+
+.history {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  padding: 2rem 5rem;
+}
+
+.image-section {
+  position: relative;
+}
+
+.image-background {
+  width: 350px;
+  height: 350px;
+  border-radius: 175px;
+  background-color: #f0a1ae;
+  position: absolute;
+  top: 100px;
+}
+
+.image-section > img {
+  position: absolute;
+  width: 350px;
+  border-radius: 0 0 175px 175px;
+  top: 41px;
+}
+
+.empty-div {
+  height: 500px;
+}
+
+.image-section .hospitality {
+  width: 100px;
+  height: 160px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 200px;
+  left: -50px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(190, 190, 190);
+}
+
+.image-section .hospitality .hospitality-inner{
+  height: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.image-section .hospitality .hospitality-inner .image-background {
+  background-color: var(--orange-color);
+  width: 50px;
+  height: 50px;
+  /* position: absolute; */
+  top: 15px;
+  left: 25px;
+}
+
+.image-section .hospitality .hospitality-inner > img {
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+
+.image-section .food-culture {
+  width: 100px;
+  height: 180px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 160px;
+  left: 290px;
+  text-align: center;
+  font-weight: 600;
+  color: rgb(190, 190, 190);
+}
+
+.image-section .food-culture .food-culture-inner{
+  height: 45%;
+  width: 100%;
+  position: relative;
+}
+
+.image-section .food-culture .food-culture-inner .image-background {
+  background-color: var(--orange-color);
+  width: 50px;
+  height: 50px;
+  /* position: absolute; */
+  top: 15px;
+  left: 25px;
+}
+
+.image-section .food-culture .food-culture-inner > img {
+  width: 40px;
+  height: 35px;
+  position: absolute;
+  top: 23px;
+  left: 30px;
+}
+
+.image-section .kimono {
+  display: flex;
+  align-items: center;
+  width: 150px;
+  height: 70px;
+  padding-right: 10px;
+  border-radius: 10px;
+  background-color: white;
+  position: absolute;
+  top: 380px;
+  left: 190px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.image-section .kimono .kimono-inner{
+  height: 45%;
+  width: 100%;
+  position: relative;
+}
+
+.hexagon-wrapper {
+  position: absolute;
+}
+
+.hexagon-background {
+  height: 0;
+  width: 21px;
+  border-top: 21px solid rgb(195, 148, 195);
+  border-right: 14px solid transparent;
+  border-left: 14px solid transparent;
+  position: relative;
+  top: 17px;
+  left: 10px;
+  margin: 0;
+}
+
+.hexagon-background::before {
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 21px;
+  border-bottom: 21px solid rgb(195, 148, 195);;
+  border-right: 14px solid transparent;
+  border-left: 14px solid transparent;
+  bottom: 21px;
+  left: -14px;
+  margin: 0;
+}
+
+.image-section .kimono .kimono-inner > img {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 2px;
+  left: 20px;
+}
+
+.image-section h2 {
+  margin: 0.2rem 0 -0.2rem 0;
+  color: rgb(240, 163, 55);
+}
+
+.kimono > h2 {
+  color: var(--text-color);
+  margin: 0;
+}
+
+.image-section p {
+  margin: 0.5rem 0;
+}
+
+
+.text-section > h3 {
+  color: #b22e76;
+}
+
+.text-section > h2 {
+  font-size: 3.5rem;
+  font-weight: 400;
+  margin: -0.25rem 0;
+}
+
+
