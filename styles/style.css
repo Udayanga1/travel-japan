@@ -410,3 +410,21 @@ header {
 .tourism-hospitality .heart-png-container img {
   width: 30px;
 }
+
+.summary-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 2rem 4rem;
+  margin-bottom: 0;
+}
+
+footer .flag-section {
+  padding: 0.5rem;
+  display: flex;
+  background-color: #c7a2a8;
+}
+
+.flag-section > a {
+  margin-left: auto;
+}
