@@ -140,7 +140,7 @@ header {
   text-align: center;
 }
 
-.history {
+.history, .tourism-hospitality {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 50px;
@@ -160,7 +160,7 @@ header {
   top: 100px;
 }
 
-.image-section > img {
+.history .image-section > img {
   position: absolute;
   width: 350px;
   border-radius: 0 0 175px 175px;
@@ -346,3 +346,67 @@ header {
   padding: 5px 10px;
 }
 
+.tourism-hospitality .image-section {
+  height: 500px;
+}
+
+.tourism-hospitality .image-background {
+  height: 450px;
+  width: 300px;
+  background-image: url(/images/flowers-2.jpg);
+  object-fit: cover;
+  top: 10px;
+}
+
+.tourism-hospitality .japanese-girl-2 {
+  width: 300px;
+  border-radius: 150px;
+  position: absolute;
+  top: 30px;
+  
+}
+
+.tourism-hospitality .flower-branch-1 {
+  width: 200px;
+  position: absolute;
+  top: 354px;
+  left: -80px;
+}
+
+.tourism-hospitality .flower-branch-2 {
+  width: 230px;
+  rotate: 120deg;
+  position: absolute;
+  top: 70px;
+  left: 190px;
+}
+
+.tourism-hospitality .top-bar {
+  width: 70px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: var(--orange-color);
+  margin-bottom: 1rem;
+}
+
+.tourism-hospitality .text-content {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: justify;
+  margin: 1rem auto 2rem;
+  position: relative;
+}
+
+.tourism-hospitality .heart-png-container {
+  position: absolute;
+  background-color: var(--orange-color);
+  padding: 5px 5px 2px;
+  border-radius: 5px;
+  right: 25px;
+  bottom: -20px;
+}
+
+.tourism-hospitality .heart-png-container img {
+  width: 30px;
+}
