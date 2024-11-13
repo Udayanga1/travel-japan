@@ -428,3 +428,92 @@ footer .flag-section {
 .flag-section > a {
   margin-left: auto;
 }
+
+@media only screen and (max-width: 1000px){
+  section h2 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    /* margin: -0.25rem 0; */
+  }
+
+  .text-section p {
+    text-align: justify;
+  }
+  .hero {
+    padding-left: 2rem;
+    grid-template-columns: 1fr;
+    /* gap: 50px; */
+  }
+
+  .hero .hero-left {
+    padding-right: 2rem;
+  }
+
+  .history, .tourism-hospitality {
+    grid-template-columns: 1fr;
+    gap: 50px;
+    padding: 2rem 2rem;
+  }
+
+  .history .image-section {
+    width: 350px;
+    margin: 0 auto 0 auto;
+  }
+
+  .tourism-hospitality .image-section {
+    width: 350px;
+    margin: 0 auto 0 auto;
+  }
+
+  .categories-section, .point-of-details, .summary-section {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .summary-section p {
+    text-align: justify;
+  }
+
+}
+
+@media only screen and (max-width: 600px){
+  section h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+
+  .point-of-details table th,td {
+    padding: 1px 2px;
+    font-size: 0.75rem;
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .hero-left > h1 {
+    font-size: 3rem;
+  }
+  
+  .image-section .food-culture {
+    left: 250px;
+  }
+
+  .image-section .hospitality {
+    left: 0;
+  }
+
+  .tourism-hospitality .flower-branch-2, .flower-branch-1 {
+    display: none;
+  }
+
+  .history, .tourism-hospitality {
+    padding: 2rem 0 2rem 0;
+  }
+
+  .history .text-section {
+    padding: 1rem 1rem;
+  }
+
+  .summary-section {
+    grid-template-columns: 1fr;
+  }
+}
